@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitalmente — Agenzia Creativa Digitale a 360° | Roma</title>
+  <meta name="description" content="Digitalmente è un'agenzia creativa digitale a 360° con sede a Roma. Web design, social media, marketing online e graphic design per brand ambiziosi.">
+  <meta name="keywords" content="agenzia digitale, Roma, web design, social media, marketing, graphic design">
+  <meta property="og:title" content="Digitalmente — Agenzia Creativa Digitale">
+  <meta property="og:description" content="Creiamo esperienze digitali che lasciano il segno. Agenzia creativa a 360° con sede a Roma.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23FF6B35'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='900' font-size='20'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-text" id="loaderText"></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">
+      Digital<span class="accent">mente</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servizi" data-hover>Servizi</a></li>
+      <li><a href="#chi-siamo" data-hover>Chi Siamo</a></li>
+      <li><a href="portfolio.html" data-hover>Portfolio</a></li>
+      <li><a href="#contatti" data-hover>Contatti</a></li>
+    </ul>
+    <a href="inizia-progetto.html" class="nav-cta" data-hover>Inizia un progetto</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servizi" class="mobile-link">Servizi</a>
+    <a href="#chi-siamo" class="mobile-link">Chi Siamo</a>
+    <a href="portfolio.html" class="mobile-link">Portfolio</a>
+    <a href="#contatti" class="mobile-link">Contatti</a>
+    <a href="inizia-progetto.html" class="mobile-link">Inizia un Progetto</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-line"></div>
+    <div class="hero-bg-line"></div>
+    <div class="hero-bg-line"></div>
+    <div class="hero-bg-line"></div>
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+
+    <div class="hero-label">Agenzia Creativa Digitale — Roma</div>
+
+    <h1 class="hero-title">
+      <span class="line"><span class="line-inner" id="heroLine1">Creiamo</span></span>
+      <span class="line"><span class="line-inner accent-text" id="heroLine2">Esperienze</span></span>
+      <span class="line"><span class="line-inner stroke-text" id="heroLine3">Digitali</span></span>
+    </h1>
+
+    <div class="hero-bottom">
+      <p class="hero-description">
+        Trasformiamo idee audaci in esperienze digitali memorabili. 
+        Web design, social media, marketing e graphic design — tutto con l'anima di Roma.
+      </p>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Social Media <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Marketing Digitale <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Graphic Design <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+      <span class="marquee-item">UX / UI <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Social Media <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Marketing Digitale <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Graphic Design <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+      <span class="marquee-item">UX / UI <span class="marquee-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section class="section services" id="servizi">
+    <div class="section-label reveal">I Nostri Servizi</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Soluzioni digitali<br>su misura
+    </h2>
+    <div class="services-grid">
+      <a href="servizi/web-design.html" class="service-card reveal reveal-delay-1" data-hover>
+        <div class="service-number">01</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="service-name">Creazione Siti Web</h3>
+        <p class="service-desc">Progettiamo e sviluppiamo siti web che non passano inosservati. Dalla landing page all'e-commerce, ogni progetto è un'opera unica pensata per convertire e incantare.</p>
+        <span class="service-link">Scopri di più <span>→</span></span>
+      </a>
+      <a href="servizi/social-media.html" class="service-card reveal reveal-delay-2" data-hover>
+        <div class="service-number">02</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 12 7.5v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </div>
+        <h3 class="service-name">Social Media Content</h3>
+        <p class="service-desc">Contenuti che fermano lo scroll. Creiamo strategie di contenuto visivo per Instagram, TikTok, LinkedIn e oltre — con un'estetica italiana inconfondibile.</p>
+        <span class="service-link">Scopri di più <span>→</span></span>
+      </a>
+      <a href="servizi/marketing.html" class="service-card reveal reveal-delay-3" data-hover>
+        <div class="service-number">03</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="service-name">Marketing Online</h3>
+        <p class="service-desc">Strategie basate sui dati che portano risultati reali. SEO, campagne ads, funnel di conversione e analisi — tutto calibrato per far crescere il tuo brand.</p>
+        <span class="service-link">Scopri di più <span>→</span></span>
+      </a>
+      <a href="servizi/graphic-design.html" class="service-card reveal reveal-delay-4" data-hover>
+        <div class="service-number">04</div>
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3 class="service-name">Graphic Design</h3>
+        <p class="service-desc">Dal logo alla brand identity completa, dal packaging all'editorial design. Creiamo visual che parlano la lingua del tuo pubblico e restano impressi.</p>
+        <span class="service-link">Scopri di più <span>→</span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="chi-siamo">
+    <div class="section-label reveal">Chi Siamo</div>
+    <h2 class="section-title reveal reveal-delay-1">Creatività con<br>l'anima di Roma</h2>
+    <div class="about-grid">
+      <div class="reveal reveal-delay-2">
+        <div class="about-highlight">
+          "Non creiamo solo progetti digitali — creiamo esperienze che riflettono la bellezza, l'audacia e la storia della Città Eterna."
+        </div>
+        <p class="about-text">
+          Digitalmente nasce nel cuore di Roma con una missione chiara: portare la creatività italiana nel mondo digitale. Siamo un team di designer, sviluppatori e strateghi che credono nel potere del design per trasformare i brand.
+        </p>
+        <p class="about-text">
+          Ogni progetto che realizziamo porta con sé l'eleganza e la forza della tradizione italiana, combinata con le tecnologie più innovative del panorama digitale contemporaneo.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="150">0</div>
+            <div class="stat-label">Progetti Completati</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="45">0</div>
+            <div class="stat-label">Clienti Attivi</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-label">Anni di Esperienza</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal reveal-delay-3">
+        <div class="about-img-wrapper">
+          <img src="assets/img/logo.png" alt="Digitalmente Studio Roma">
+        </div>
+        <div class="about-badge">
+          <span class="big">Roma</span>
+          <span class="small">Città Eterna</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section portfolio" id="portfolio">
+    <div class="section-label reveal">Portfolio</div>
+    <h2 class="section-title reveal reveal-delay-1">Lavori<br>selezionati</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item reveal reveal-delay-1" data-hover>
+        <img src="assets/img/portfolio-branding.png" alt="Aurora Milano — Brand Identity">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Brand Identity</span>
+          <span class="portfolio-name">Aurora Milano</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-2" data-hover>
+        <img src="assets/img/portfolio-webapp.png" alt="Synapse Analytics — Web App">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Web Application</span>
+          <span class="portfolio-name">Synapse Analytics</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-2" data-hover>
+        <img src="assets/img/portfolio-social.png" alt="Social Media Campaign">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Social Media</span>
+          <span class="portfolio-name">Italian Vibes Collection</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-3" data-hover>
+        <img src="assets/img/portfolio-ecommerce.png" alt="Aurora & Co. — E-commerce">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">E-Commerce</span>
+          <span class="portfolio-name">Aurora & Co.</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-3" data-hover>
+        <img src="assets/img/portfolio-campaign.png" alt="Campagna Marketing — Coral Roma">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Campagna Marketing</span>
+          <span class="portfolio-name">Coral Roma</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-4" data-hover>
+        <img src="assets/img/portfolio-packaging.png" alt="Acqua di Fiori — Packaging Design">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Packaging Design</span>
+          <span class="portfolio-name">Acqua di Fiori</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contatti">
+    <div class="section-label reveal">Contatti</div>
+    <h2 class="contact-title reveal reveal-delay-1">
+      Hai un'idea<span class="accent-text">?</span><br>
+      Parliamone<span class="accent-text">.</span>
+    </h2>
+    <p class="contact-subtitle reveal reveal-delay-2">
+      Ogni grande progetto inizia con una conversazione. Raccontaci la tua visione e trasformiamola insieme in qualcosa di straordinario.
+    </p>
+    <a href="inizia-progetto.html" class="contact-cta reveal reveal-delay-3" data-hover>
+      <span>Inizia un progetto</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <div class="contact-info reveal reveal-delay-4">
+      <div class="contact-info-item">
+        <span class="contact-info-label">Email</span>
+        <a href="mailto:ciao@digitalmente.studio" class="contact-info-value">ciao@digitalmente.studio</a>
+      </div>
+      <div class="contact-info-item">
+        <span class="contact-info-label">Telefono</span>
+        <a href="tel:+390612345678" class="contact-info-value">+39 06 1234 5678</a>
+      </div>
+      <div class="contact-info-item">
+        <span class="contact-info-label">Sede</span>
+        <span class="contact-info-value">Roma, Italia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Navigazione</h4>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="inizia-progetto.html">Inizia un Progetto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Servizi</h4>
+        <a href="servizi/web-design.html">Web Design</a>
+        <a href="servizi/social-media.html">Social Media</a>
+        <a href="servizi/marketing.html">Marketing</a>
+        <a href="servizi/graphic-design.html">Graphic Design</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <p>ciao@digitalmente.studio</p>
+        <p>+39 06 1234 5678</p>
+        <p>Roma, Italia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Seguici</h4>
+        <div class="footer-social">
+          <a href="#" data-hover>Instagram</a>
+          <a href="#" data-hover>LinkedIn</a>
+          <a href="#" data-hover>Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wordmark">Digital<span class="accent">mente</span></div>
+    <div class="footer-bottom">
+      <span>© 2026 Digitalmente — Tutti i diritti riservati</span>
+      <span>Agenzia Creativa Digitale — Roma</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

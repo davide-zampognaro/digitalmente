@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Digitalmente | I Nostri Lavori</title>
+  <meta name="description" content="Scopri i progetti realizzati da Digitalmente: siti web, brand identity, campagne social e molto altro. Portfolio completo della nostra agenzia.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23FF6B35'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='900' font-size='20'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Digital<span class="accent">mente</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#servizi" data-hover>Servizi</a></li>
+      <li><a href="index.html#chi-siamo" data-hover>Chi Siamo</a></li>
+      <li><a href="portfolio.html" data-hover>Portfolio</a></li>
+      <li><a href="index.html#contatti" data-hover>Contatti</a></li>
+    </ul>
+    <a href="inizia-progetto.html" class="nav-cta" data-hover>Inizia un progetto</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="index.html#servizi">Servizi</a><a href="portfolio.html">Portfolio</a><a href="index.html#contatti">Contatti</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg-line"></div><div class="hero-bg-line"></div><div class="hero-bg-line"></div>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Portfolio</div>
+    <h1 class="page-hero-title">I nostri<br><span class="accent-text">Lavori</span></h1>
+    <p class="page-hero-subtitle">Una selezione dei progetti che ci rendono orgogliosi. Ogni lavoro è una storia di creatività, strategia e passione italiana.</p>
+  </section>
+
+  <!-- Filters + Grid -->
+  <section class="section">
+    <div class="portfolio-filters reveal">
+      <button class="filter-btn active" data-filter="all">Tutti</button>
+      <button class="filter-btn" data-filter="web">Web Design</button>
+      <button class="filter-btn" data-filter="brand">Brand Identity</button>
+      <button class="filter-btn" data-filter="social">Social Media</button>
+      <button class="filter-btn" data-filter="marketing">Marketing</button>
+    </div>
+
+    <div class="portfolio-full-grid" id="portfolioGrid">
+      <div class="portfolio-item wide reveal reveal-delay-1" data-category="brand" data-hover>
+        <img src="assets/img/portfolio-branding.png" alt="Aurora Milano — Brand Identity">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Brand Identity</span>
+          <span class="portfolio-name">Aurora Milano</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-2" data-category="web" data-hover>
+        <img src="assets/img/portfolio-webapp.png" alt="Synapse Analytics — Web App">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Web Application</span>
+          <span class="portfolio-name">Synapse Analytics</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-2" data-category="social" data-hover>
+        <img src="assets/img/portfolio-social.png" alt="Italian Vibes Collection">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Social Media</span>
+          <span class="portfolio-name">Italian Vibes Collection</span>
+        </div>
+      </div>
+      <div class="portfolio-item wide reveal reveal-delay-3" data-category="web" data-hover>
+        <img src="assets/img/portfolio-ecommerce.png" alt="Aurora & Co. — E-commerce">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">E-Commerce</span>
+          <span class="portfolio-name">Aurora & Co.</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-3" data-category="marketing" data-hover>
+        <img src="assets/img/portfolio-campaign.png" alt="Coral Roma — Campagna Marketing">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Campagna Marketing</span>
+          <span class="portfolio-name">Coral Roma</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-4" data-category="brand" data-hover>
+        <img src="assets/img/portfolio-packaging.png" alt="Acqua di Fiori — Packaging">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Packaging Design</span>
+          <span class="portfolio-name">Acqua di Fiori</span>
+        </div>
+      </div>
+      <div class="portfolio-item reveal reveal-delay-4" data-category="web" data-hover>
+        <img src="assets/img/portfolio-branding.png" alt="Velvet Studio — Sito Web">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Web Design</span>
+          <span class="portfolio-name">Velvet Studio</span>
+        </div>
+      </div>
+      <div class="portfolio-item wide reveal reveal-delay-4" data-category="social" data-hover>
+        <img src="assets/img/portfolio-campaign.png" alt="Estate Romana — Social Campaign">
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Social Campaign</span>
+          <span class="portfolio-name">Estate Romana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="service-cta-banner reveal">
+    <h3>Vuoi vedere il tuo progetto qui?</h3>
+    <p>Raccontaci la tua idea e creiamo qualcosa di straordinario insieme.</p>
+    <a href="inizia-progetto.html" class="btn-dark" data-hover>Inizia un progetto <span>→</span></a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col"><h4>Navigazione</h4><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="inizia-progetto.html">Inizia un Progetto</a></div>
+      <div class="footer-col"><h4>Servizi</h4><a href="servizi/web-design.html">Web Design</a><a href="servizi/social-media.html">Social Media</a><a href="servizi/marketing.html">Marketing</a><a href="servizi/graphic-design.html">Graphic Design</a></div>
+      <div class="footer-col"><h4>Contatti</h4><p>ciao@digitalmente.studio</p><p>+39 06 1234 5678</p><p>Roma, Italia</p></div>
+      <div class="footer-col"><h4>Seguici</h4><div class="footer-social"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Behance</a></div></div>
+    </div>
+    <div class="footer-wordmark">Digital<span class="accent">mente</span></div>
+    <div class="footer-bottom"><span>© 2026 Digitalmente — Tutti i diritti riservati</span><span>Agenzia Creativa Digitale — Roma</span></div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Force reveal all portfolio items after page load
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.portfolio-full-grid .portfolio-item').forEach((item, i) => {
+          setTimeout(() => { item.classList.add('visible'); }, i * 100);
+        });
+      }, 300);
+    });
+
+    // Portfolio filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        let delay = 0;
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = '';
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+              item.style.opacity = '1';
+              item.style.transform = 'translateY(0)';
+            }, delay * 80 + 50);
+            delay++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

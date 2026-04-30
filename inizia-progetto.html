@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inizia un Progetto — Digitalmente</title>
+  <meta name="description" content="Raccontaci la tua idea e trasformiamola insieme in un progetto digitale straordinario. Compila il form e ti ricontatteremo.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23FF6B35'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='900' font-size='20'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Digital<span class="accent">mente</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#servizi" data-hover>Servizi</a></li>
+      <li><a href="index.html#chi-siamo" data-hover>Chi Siamo</a></li>
+      <li><a href="portfolio.html" data-hover>Portfolio</a></li>
+      <li><a href="index.html#contatti" data-hover>Contatti</a></li>
+    </ul>
+    <a href="inizia-progetto.html" class="nav-cta" data-hover>Inizia un progetto</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="index.html#servizi">Servizi</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html#contatti">Contatti</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg-line"></div>
+    <div class="hero-bg-line"></div>
+    <div class="hero-bg-line"></div>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Inizia un Progetto</div>
+    <h1 class="page-hero-title">Inizia un<br><span class="accent-text">Progetto</span></h1>
+    <p class="page-hero-subtitle">Raccontaci la tua idea. Compila il form passo dopo passo e ti ricontatteremo entro 24 ore.</p>
+  </section>
+
+  <!-- Multi-Step Form -->
+  <section class="section">
+    <div class="form-container">
+      <div class="form-progress" id="formProgress">
+        <div class="form-progress-fill" id="progressFill" style="width: 0%"></div>
+        <div class="progress-step active" data-step="1">
+          <div class="progress-dot">1</div>
+          <span class="progress-label">Chi sei</span>
+        </div>
+        <div class="progress-step" data-step="2">
+          <div class="progress-dot">2</div>
+          <span class="progress-label">Il progetto</span>
+        </div>
+        <div class="progress-step" data-step="3">
+          <div class="progress-dot">3</div>
+          <span class="progress-label">Dettagli</span>
+        </div>
+        <div class="progress-step" data-step="4">
+          <div class="progress-dot">4</div>
+          <span class="progress-label">Conferma</span>
+        </div>
+      </div>
+
+      <!-- Step 1: Chi sei -->
+      <div class="form-step active" id="step1">
+        <h3>Parlaci di te</h3>
+        <p class="form-subtitle">Chi c'è dietro questo progetto?</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Il tuo nome">
+          </div>
+          <div class="form-group">
+            <label for="cognome">Cognome</label>
+            <input type="text" id="cognome" placeholder="Il tuo cognome">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="ciao@tuodominio.it">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Telefono (opzionale)</label>
+          <input type="tel" id="telefono" placeholder="+39 ...">
+        </div>
+        <div class="form-group">
+          <label for="azienda">Azienda / Brand</label>
+          <input type="text" id="azienda" placeholder="Nome della tua azienda o brand">
+        </div>
+        <div class="form-nav">
+          <button class="btn-next" onclick="nextStep(2)">Avanti <span>→</span></button>
+        </div>
+      </div>
+
+      <!-- Step 2: Il Progetto -->
+      <div class="form-step" id="step2">
+        <h3>Cosa ti serve?</h3>
+        <p class="form-subtitle">Seleziona i servizi che ti interessano</p>
+        <div class="service-options">
+          <div class="service-option">
+            <input type="checkbox" id="svc-web" name="servizi" value="web">
+            <label for="svc-web" class="service-option-label"><span class="check-icon">✓</span> Sito Web</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" id="svc-social" name="servizi" value="social">
+            <label for="svc-social" class="service-option-label"><span class="check-icon">✓</span> Social Media</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" id="svc-marketing" name="servizi" value="marketing">
+            <label for="svc-marketing" class="service-option-label"><span class="check-icon">✓</span> Marketing Online</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" id="svc-design" name="servizi" value="design">
+            <label for="svc-design" class="service-option-label"><span class="check-icon">✓</span> Graphic Design</label>
+          </div>
+        </div>
+        <div class="form-group" style="margin-top: 2rem;">
+          <label for="budget">Budget indicativo</label>
+          <select id="budget">
+            <option value="">Seleziona un range</option>
+            <option value="small">€1.000 — €3.000</option>
+            <option value="medium">€3.000 — €8.000</option>
+            <option value="large">€8.000 — €15.000</option>
+            <option value="enterprise">€15.000+</option>
+          </select>
+        </div>
+        <div class="form-nav">
+          <button class="btn-prev" onclick="prevStep(1)"><span>←</span> Indietro</button>
+          <button class="btn-next" onclick="nextStep(3)">Avanti <span>→</span></button>
+        </div>
+      </div>
+
+      <!-- Step 3: Dettagli -->
+      <div class="form-step" id="step3">
+        <h3>Raccontaci di più</h3>
+        <p class="form-subtitle">Descrivici la tua visione</p>
+        <div class="form-group">
+          <label for="descrizione">Descrizione del progetto</label>
+          <textarea id="descrizione" placeholder="Raccontaci la tua idea, i tuoi obiettivi e qualsiasi dettaglio utile..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="tempistiche">Tempistiche desiderate</label>
+          <select id="tempistiche">
+            <option value="">Seleziona</option>
+            <option value="urgent">Urgente (entro 2 settimane)</option>
+            <option value="normal">Standard (1-2 mesi)</option>
+            <option value="flexible">Flessibile (3+ mesi)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="riferimenti">Link di riferimento o ispirazioni (opzionale)</label>
+          <input type="text" id="riferimenti" placeholder="https://esempio.com">
+        </div>
+        <div class="form-nav">
+          <button class="btn-prev" onclick="prevStep(2)"><span>←</span> Indietro</button>
+          <button class="btn-next" onclick="nextStep(4)">Avanti <span>→</span></button>
+        </div>
+      </div>
+
+      <!-- Step 4: Conferma -->
+      <div class="form-step" id="step4">
+        <h3>Tutto pronto!</h3>
+        <p class="form-subtitle">Controlla i dati e invia la tua richiesta</p>
+        <div id="riepilogo" style="background: var(--black-card); border: 1px solid var(--black-border); padding: 2rem; margin-bottom: 2rem;">
+          <p style="color: var(--gray-light); line-height: 1.8;" id="riepilogoContent">I dati del tuo progetto appariranno qui...</p>
+        </div>
+        <div class="form-nav">
+          <button class="btn-prev" onclick="prevStep(3)"><span>←</span> Indietro</button>
+          <button class="btn-submit" onclick="submitForm()">Invia richiesta <span>→</span></button>
+        </div>
+      </div>
+
+      <!-- Success -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3>Richiesta inviata!</h3>
+        <p>Grazie per averci contattato. Il nostro team ti risponderà entro 24 ore.</p>
+        <a href="index.html" class="contact-cta" style="margin-top: 2rem; display: inline-flex;" data-hover>
+          <span>Torna alla home</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col"><h4>Navigazione</h4><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="inizia-progetto.html">Inizia un Progetto</a></div>
+      <div class="footer-col"><h4>Servizi</h4><a href="servizi/web-design.html">Web Design</a><a href="servizi/social-media.html">Social Media</a><a href="servizi/marketing.html">Marketing</a><a href="servizi/graphic-design.html">Graphic Design</a></div>
+      <div class="footer-col"><h4>Contatti</h4><p>ciao@digitalmente.studio</p><p>+39 06 1234 5678</p><p>Roma, Italia</p></div>
+      <div class="footer-col"><h4>Seguici</h4><div class="footer-social"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Behance</a></div></div>
+    </div>
+    <div class="footer-wordmark">Digital<span class="accent">mente</span></div>
+    <div class="footer-bottom"><span>© 2026 Digitalmente — Tutti i diritti riservati</span><span>Agenzia Creativa Digitale — Roma</span></div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Multi-step form logic
+    let currentStep = 1;
+    const totalSteps = 4;
+
+    function nextStep(step) {
+      document.getElementById('step' + currentStep).classList.remove('active');
+      document.getElementById('step' + step).classList.add('active');
+      currentStep = step;
+      updateProgress();
+      if (step === 4) buildRiepilogo();
+    }
+    function prevStep(step) {
+      document.getElementById('step' + currentStep).classList.remove('active');
+      document.getElementById('step' + step).classList.add('active');
+      currentStep = step;
+      updateProgress();
+    }
+    function updateProgress() {
+      const fill = ((currentStep - 1) / (totalSteps - 1)) * 100;
+      document.getElementById('progressFill').style.width = fill + '%';
+      document.querySelectorAll('.progress-step').forEach(s => {
+        const n = parseInt(s.dataset.step);
+        s.classList.remove('active', 'completed');
+        if (n === currentStep) s.classList.add('active');
+        if (n < currentStep) s.classList.add('completed');
+      });
+    }
+    function buildRiepilogo() {
+      const nome = document.getElementById('nome').value || '—';
+      const cognome = document.getElementById('cognome').value || '—';
+      const email = document.getElementById('email').value || '—';
+      const azienda = document.getElementById('azienda').value || '—';
+      const servizi = [...document.querySelectorAll('input[name="servizi"]:checked')].map(c => c.nextElementSibling.textContent.trim()).join(', ') || '—';
+      const budget = document.getElementById('budget').selectedOptions[0]?.text || '—';
+      const desc = document.getElementById('descrizione').value || '—';
+      document.getElementById('riepilogoContent').innerHTML = `
+        <strong style="color:var(--accent)">Nome:</strong> ${nome} ${cognome}<br>
+        <strong style="color:var(--accent)">Email:</strong> ${email}<br>
+        <strong style="color:var(--accent)">Azienda:</strong> ${azienda}<br>
+        <strong style="color:var(--accent)">Servizi:</strong> ${servizi}<br>
+        <strong style="color:var(--accent)">Budget:</strong> ${budget}<br>
+        <strong style="color:var(--accent)">Descrizione:</strong> ${desc}
+      `;
+    }
+    function submitForm() {
+      document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
+      document.querySelector('.form-progress').style.display = 'none';
+      document.getElementById('formSuccess').classList.add('active');
+    }
+  </script>
+</body>
+</html>
