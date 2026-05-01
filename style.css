@@ -442,7 +442,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .services { background: var(--black-light); }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
   margin-top: 2rem;
 }
@@ -1290,7 +1290,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
-  .services-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
   .portfolio-full-grid { grid-template-columns: repeat(2, 1fr); }

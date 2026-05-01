@@ -5,26 +5,33 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ---- Loading Screen ----
+  // ---- Loading Screen (only on homepage) ----
   const loader = document.getElementById('loader');
   const loaderText = document.getElementById('loaderText');
-  const word = 'Digitalmente';
-  
-  // Animate loader text letter by letter
-  word.split('').forEach((char, i) => {
-    const span = document.createElement('span');
-    span.textContent = char;
-    span.style.animationDelay = `${i * 0.05}s`;
-    loaderText.appendChild(span);
-  });
 
-  // Hide loader after animation
-  setTimeout(() => {
-    loader.classList.add('hidden');
+  if (loader && loaderText) {
+    const word = 'Digitalmente';
+    
+    // Animate loader text letter by letter
+    word.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.animationDelay = `${i * 0.05}s`;
+      loaderText.appendChild(span);
+    });
+
+    // Hide loader after animation
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+      // Trigger hero animations after loader
+      setTimeout(animateHero, 300);
+    }, 2600);
+  } else {
+    // No loader — ensure body is scrollable and trigger hero if present
     document.body.style.overflow = 'auto';
-    // Trigger hero animations after loader
-    setTimeout(animateHero, 300);
-  }, 2600);
+    animateHero();
+  }
 
   // ---- Hero Title Animation ----
   function animateHero() {
